@@ -61,6 +61,30 @@ function get_my_kernel() {
     exit 0
 }
 
+
+function delete_kernel() {
+    if [ -z $args2 ]; then
+        echo -e "\r$red you must enter the option to erase the kernel.$re"
+        exit 1
+    fi
+
+    for list in $(cat $tmp_list_kernel_path); do
+        if [ $args2 == $list ]; then
+            echo -e "\r$green Removing:$re $list"
+            sleep 1
+            sudo dnf remove $list -y >/dev/null
+            clear 
+            echo -e "$green He was removed:$re $args2"
+            rm -r --force $tmp_list_kernel_path
+            exit 0
+        fi
+    done
+
+    echo -e "$red Kernel not found, possibly does not exist or has been uninstalled $re"
+    exit 1
+}
+
+
 function grep_kenel_list() {
     # check if you have anything args2
     if [ -z $args2 ]; then
@@ -72,6 +96,7 @@ function grep_kenel_list() {
         if [ $args2 == $line ]; then
             echo -e "\rThe kernel exists $green[OK]$re"
             echo -e "\n--> $line"
+            return $line
             exit 0
         fi
     done
@@ -107,6 +132,8 @@ function main() {
 
         \r-sk,  --search-kernel       Search a kernel from list, -sk [kernel-...]      
         
+        \r-rk   --remove-kernel       Delete a kernel specified by args, -rk [kernel...]
+
         \r-h,   --help                Print the help and exit successfully [0]
 
         \r-v,  --version              Prints the version of the script and has an output [0]
@@ -131,6 +158,8 @@ function main() {
         list_kernel
     elif [ $args1 == "-sk" -o $args1 == "--search-kernel" ]; then
         grep_kenel_list
+    elif [ $args1 == "-rk" -o $args1 == "--remove-kernel" ]; then
+        delete_kernel
     fi
 }
 
