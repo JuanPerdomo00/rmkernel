@@ -22,6 +22,9 @@ rmkernel -h
 
 ### Usage
 
+for example: [rmkernel](https://asciinema.org/a/618857)
+
+
 The script accepts the following arguments:
 
 ```bash
