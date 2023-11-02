@@ -14,7 +14,7 @@ cp ./rmkernel.sh /usr/bin/rmkernel
 echo "[ok] Installation successful"
 sleep 1
 echo -e "\rUse: rmkernel -h for more info
-If you find an error you can report it at: 
+If you find an error you can report it at: https://github.com/JuanPerdomo00/rmkernel/issues
 "
 
 
