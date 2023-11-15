@@ -126,7 +126,7 @@ function main() {
 
         \rRequired arguments apply to both long and short arguments.
 
-        \r-gk   --get-my-kernel       Print your kernel version and release
+        \r-gk,  --get-my-kernel       Print your kernel version and release
 
         \r-lk,  --list-kernels        Lists the kernels installed on your system
 
