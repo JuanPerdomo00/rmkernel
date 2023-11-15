@@ -3,6 +3,7 @@
 
 if [[ $UID -ne 0 ]]; then 
     echo -e "\rUse: sudo"
+    exit 1
 fi
 
 clear 
