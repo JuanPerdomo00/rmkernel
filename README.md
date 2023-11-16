@@ -28,12 +28,12 @@ for example: [rmkernel](https://asciinema.org/a/618857)
 The script accepts the following arguments:
 
 ```bash
-    -gk, --get-my-kernel: Prints the version and release of the installed kernel.
-    -lk, --list-kernels: Lists all the kernels installed on the system.
-    -sk, --search-kernel [kernel-...]: Searches for a specific kernel from the list.
-    -rk, --remove-kernel [kernel...]: Deletes a specified kernel from the system.
-    -h, --help: Displays the help menu.
-    -v, --version: Displays the script version.
+ #   -gk, --get-my-kernel: Prints the version and release of the installed kernel.
+ #   -lk, --list-kernels: Lists all the kernels installed on the system.
+ #   -sk, --search-kernel [kernel-...]: Searches for a specific kernel from the list.
+ #   -rk, --remove-kernel [kernel...]: Deletes a specified kernel from the system.
+ #   -h, --help: Displays the help menu.
+ #   -v, --version: Displays the script version.
 ```
 
 ### License
