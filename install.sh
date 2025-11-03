@@ -1,4 +1,19 @@
 #!/bin/bash
+# God Is Firs
+# This script is licensed under the GNU General Public License, version 3.
+# (c) 2023 <perdomojuan187@gmail.com>
+
+# This script is designed to list and remove old kernels in Fedora.
+# Please refer to Fedora documentation for more details on old kernels and their removal.
+
+# You can find a copy of the GNU General Public License at
+# <https://www.gnu.org/licenses/gpl-3.0.html>.
+
+# This script is provided "as is", without warranty or conditions of any kind, express or implied.
+# Refer to the GNU General Public License for the complete details.
+
+# Author: Jakepys
+# Version: 1.0
 
 
 if [[ $UID -ne 0 ]]; then 

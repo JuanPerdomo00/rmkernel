@@ -13,7 +13,7 @@ This script is intended for use on Fedora systems.
 To get started with the script, simply execute it from the terminal. Ensure that you have the necessary permissions to run the script.
 
 ```bash
-# isntall 
+# isntall :D
 ./install.sh
 
 # use 

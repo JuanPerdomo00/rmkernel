@@ -12,7 +12,7 @@
 # This script is provided "as is", without warranty or conditions of any kind, express or implied.
 # Refer to the GNU General Public License for the complete details.
 
-# Author: Jakepy
+# Author: Jakepys
 # Version: 1.0
 
 
